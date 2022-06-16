@@ -1,0 +1,81 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(
+        90deg, 
+        rgba(255,0,0,1) 5%, 
+        rgba(0,0,255,1) 15%, 
+        rgba(255,205,0,1) 25%, 
+        rgba(255,0,0,1) 35%, 
+        rgba(0,0,255,1) 45%, 
+        rgba(255,205,0,1) 55%, 
+        rgba(255,0,0,1) 65%, 
+        rgba(0,0,255,1) 75%, 
+        rgba(255,205,0,1) 85%, 
+        rgba(255,0,0,1) 95%);
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+h1 {
+    width: fit-content;
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+    border: 5px black solid;
+}
+
+a {
+    margin-top: 20px;
+    display: flex;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    border: 1px black solid;
+    color: black;
+    font-weight: 600;
+    font-size: 30px;
+    transition: 0.2s;
+}
+
+a:hover {
+    animation-name: shine;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    text-decoration: none;
+    color: black;
+}
+
+#name1 {
+    margin-left: 45%;
+}
+#name2 {
+    margin-left: 45.3%;
+}
+#name3 {
+    margin-left: 43.5%;
+}
+#name4 {
+    margin-left: 41.5%;
+}
+#name5 {
+    margin-left: 41%;
+}
+
+@keyframes shine {
+    0% {background: linear-gradient(60deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.75) 10%);}
+    10% {background: linear-gradient(60deg, rgba(255,255,255,0.75) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,0.75) 20%);}
+    20% {background: linear-gradient(60deg, rgba(255,255,255,0.75) 10%, rgba(255,255,255,1) 20%, rgba(255,255,255,0.75) 20%);}
+    30% {background: linear-gradient(60deg, rgba(255,255,255,0.75) 20%, rgba(255,255,255,1) 30%, rgba(255,255,255,0.75) 20%);}
+    40% {background: linear-gradient(60deg, rgba(255,255,255,0.75) 30%, rgba(255,255,255,1) 40%, rgba(255,255,255,0.75) 20%);}
+    50% {background: linear-gradient(60deg, rgba(255,255,255,0.75) 40%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.75) 20%);}
+    60% {background: linear-gradient(60deg, rgba(255,255,255,0.75) 50%, rgba(255,255,255,1) 60%, rgba(255,255,255,0.75) 20%);}
+    70% {background: linear-gradient(60deg, rgba(255,255,255,0.75) 60%, rgba(255,255,255,1) 70%, rgba(255,255,255,0.75) 20%);}
+    80% {background: linear-gradient(60deg, rgba(255,255,255,0.75) 70%, rgba(255,255,255,1) 80%, rgba(255,255,255,0.75) 20%);}
+    90% {background: linear-gradient(60deg, rgba(255,255,255,0.75) 80%, rgba(255,255,255,1) 90%, rgba(255,255,255,0.75) 20%);}
+    100% {background: linear-gradient(60deg, rgba(255,255,255,0.75) 0%, rgba(255,255,255,1) 100%);}
+}
